@@ -80,17 +80,3 @@ for area in area_url:
 with open("travel_info.json", 'w',encoding="utf-8") as outfile:
     outfile.write(json.dumps(output_data,ensure_ascii= False,indent=4, sort_keys=True))
 outfile.close()
-    
-#            tel=info[0].text
-#            address=info[1].text    
-#            coordinate=info[2].text
-#            try:
-#                web=info[3].find("a")["href"]
-#            except:
-#                web="none"
-#            attr_dic={"景點":attr_title,
-#                      "景點簡介":attr_body,
-#                      "電話":tel,
-#                      "地址":address,
-#                      "經緯度":coordinate,
-#                      "網站":web}
